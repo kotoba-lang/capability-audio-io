@@ -1,0 +1,5 @@
+(ns kotoba.capability.audio.io
+  "Importable contract for audio/io.")
+
+(def manifest
+  {:schema "kotoba.capability.repository.v1", :capability/version 1, :capability/dependencies #{}, :capability/imports #{:audio-play :audio-record}, :authority "kotoba-lang/kotoba-core-contracts", :capability/default-policy :approval-required, :capability/artifact {:format :wasm-component, :digest-required? true, :signature-required? true}, :capability/radicle-rid nil, :capability/repository "kotoba-lang/capability-audio-io", :capability/id "audio/io", :capability/effects #{:personal-data :sensor-read :device-write}, :capability/provider-status :contract-only})
